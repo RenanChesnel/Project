@@ -1,0 +1,41 @@
+body{
+    /*taille de l'écran de l'utilisateur*/
+    min-height: 100vh;
+}
+
+div:nth-child(1){
+    background: yellow;
+    grid-area: y1;
+    border: 20px solid white;
+}
+div:nth-child(2){
+    background: purple;
+    grid-area: p1;
+    border: 20px solid white;
+}
+div:nth-child(3){
+    background: green;
+    grid-area: g1;
+    border: 20px solid white;
+}
+div:nth-child(4){
+    background: red;
+    grid-area: r1;
+    border: 20px solid white;
+}
+div:nth-child(5){
+    background: orchid;
+    grid-area: o1;
+    border: 20px solid white;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "y1 y1 p1"
+    "r1 g1 p1"
+    "r1 o1 o1";
+    border: 20px solid white;
+}

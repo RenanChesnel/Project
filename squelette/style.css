@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Inter&display=swap');
+
+/* initialisation pour tout les elements */
+*{
+    margin: 0;
+    padding: 5px;
+    font-family: "inter", sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 0.8rem;
+}
+
+
+body{
+    /* color: black; */
+    background: rgb(32, 32, 32);
+    /*100% de la taille de l'ecran au mini*/
+    min-height: 100vh;
+    color: white;
+}
+
+/*-------------------------------------------------*/
+/*----------------barre de navigation*/
+nav{
+    /* aigner les element de la liste */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* h2{
+    width: 50%;
+} */
+nav ul{
+    /* aigner les element de la liste */
+    display: flex;
+     /* repartir equitablement les boites dans l'espace */
+    justify-content: space-between;
+    width: 50%;
+
+}
+li{
+        /* suppression de point de liste */
+        list-style-type: none;
+        /* display: flex; */
+
+}
+
+
+/*-------------------------------------------------*/
+/*---------header---------------*/
+header{
+    /*cote à cote*/
+    display: flex;
+    /* repartition des element */
+    justify-content: space-around;
+   
+    margin: 30px auto;
+    
+}
+
+.header-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* vertical */
+    align-items: center;
+    /* Horizontal */
+    /* justify-content: center; */
+}
+.header-left-container h1{
+    font-size: 5rem;
+
+}
+.header-left-container h2{
+    font-size: 1.5rem;
+    color: #474dff;
+}
+.header-right{
+    width: 50%;
+}
+.header-right {
+    width: 50%;
+}
+.header-right img{
+   
+    /*100% de son parent*/
+    width: 100%;
+}
+
+/*-------------------------------------------------*/
+/*---------section info---------------*/
+#info{
+    display: flex;
+    /* border: 2px solid skyblue; */
+    background:black;
+    border-radius: 10px;
+}
+.info-left{
+    width: 30%;
+    padding: 10px;
+}
+.btn-container {
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+button{
+    border: none;
+    width: 150px;
+    background:  #474dff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.info-right{
+    width: 70%;
+}   
+.invertors{
+    display: flex;
+    /*centrer verticalement*/
+    align-items: center;
+    /*centrer horizontalement*/
+    justify-content: center;
+    height: 80%;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+            /* aigner les element de la liste */
+            /* display: block; */
+            /* repartir equitablement les boites dans l'espace */
+           justify-content: space-around;
+}
+.img-container img{
+    /* width: 80px; */
+    height: 60px;
+    /* margin-top: 50px; */
+}
+
+

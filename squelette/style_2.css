@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Inter&display=swap');
+
+/* initialisation pour tout les elements */
+*{
+    margin: 0;
+    padding: 5px;
+    font-family: "inter", sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 0.8rem;
+}
+body{
+    /* color: black; */
+    background: rgb(32, 32, 32);
+    /*100% de la taille de l'ecran au mini*/
+    min-height: 100vh;
+    color: white;
+}
+
+/*-------------------------------------------------*/
+/*----------------barre de navigation*/
+nav{
+    display: grid;
+    /*repartition des 2 elements à 50% de l'espace*/
+    grid-template-columns: 50% 50%;
+    padding: 10px 20px;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+li{
+        /* suppression de point de liste */
+        list-style-type: none;
+}
+
+/*-------------------------------------------------*/
+/*---------header---------------*/
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px auto;
+    /*centrer verticalement en flex et en grid*/
+    align-items: center;
+    
+}
+
+.header-left{
+    width: 50%;
+}
+.header-left-container h1{
+    font-size: 5rem;
+
+}
+.header-left-container h2{
+    font-size: 1.5rem;
+    color: #474dff;
+}
+.header-right{
+    width: 50%;
+}
+.header-right {
+    width: 50%;
+}
+#modem{
+    /*100% de son parent*/
+    width: 100%;
+    margin: 0 auto;
+}
+/*-------------------------------------------------*/
+/*---------section info---------------*/
+#info{
+    /* border: 2px solid skyblue; */
+    background:black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+.info-left{
+    padding: 10px;
+    
+}
+.info-left h3{
+    
+    text-align: center;
+}
+.btn-container{
+    display: grid;
+    grid-template: 33% 33% 33%;
+    justify-content: center;
+}
+button{
+    border: none;
+    width: 150px;
+    background:  #474dff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.info-right{
+    width: 100%;
+}   
+.invertors{
+    display: grid;
+    /*centrer verticalement*/
+    align-items: center;
+   
+    height: 100%;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    margin-top: 40px;
+    
+}
+.img-container img{
+    /* width: 80px; */
+    height: 60px;
+    /* margin-top: 50px; */
+    /* justify-content: center; */
+}
+
+/* 
+---------------------------------------
+--------Media Query ==> RESPONSIVE-----
+------------------------------------- */
+
+/*MAQUETTE TABLETTE 850px*/
+@media screen and (max-width:850px){
+
+    .header-left-container h1{
+        font-size: 2.5rem;
+    
+    }
+    .header-left-container h3{
+        font-size: 1rem;
+    
+    }
+    p{
+        font-size: 0.7;
+        background-color:yellow;
+    }
+}
+
+/*MAQUETTE TABLETTE 850px*/
+@media screen and (max-width:550px){
+    nav {
+        grid-template-columns: 35% 65% ;
+    }
+    nav ul {
+        font-size:0.7rem    }
+}
+.img-container img{
+    height: 50px;
+}
+/*MAQUETTE MOBILE : 375*/
+@media screen and (max-width:375px){
+    
+    /* ---------nav---------------- */
+    nav{
+        display: grid;
+        /*repartition des 2 elements à 50% de l'espace*/
+        grid-template-columns: 40% 60%;
+        padding: 10px 20px;
+    }
+    
+    nav ul{
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+    }
+    
+    /*---------header---------------------*/
+    header{
+        display: block;
+        margin: 2px;
+       
+
+    }
+    .header-left{
+        text-align: left;
+        width: 100%;
+    }
+    .header-left-container h1{
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        font-size:2rem ;       
+    }
+    .header-left-container h2{
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        font-size: 1rem;
+    }
+    .header-left-container p{
+        font-size: 0.7rem;
+    }
+    #modem {
+        width: 70%;
+        
+    }
+    header img{
+        
+        /* position: center; */
+        text-align: center;
+ 
+    }
+
+    /*-------------------------------------------------*/
+/*---------section info---------------*/
+
+    #info{
+        display: block;
+        text-align: center;
+       
+
+    }
+    .img-container img{
+        height: 40px;
+       
+
+    }
+    .info-right{
+        align-items: center;
+        width: 100%;
+    }
+    .info-right h3{
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,9 @@
+// le role de index.scss est de rassembler tous les fichier SASS
+// settings.scss doir etre declaré en tout premier
+@import "./settings";
+@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/section1";
+@import "./layout/footer";
+
+

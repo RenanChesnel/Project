@@ -1,0 +1,27 @@
+// Reglages generaux
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+$font1:font1;
+$font2:font2;
+$color1:grey;
+$color2:black;
+$color3:white;
+$color4: whitesmoke;
+
+//MIXINS (variable "center" avec plusieurs reglages)
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+body{
+    background: $color2;
+    font-family: $font1;
+}
